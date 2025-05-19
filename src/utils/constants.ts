@@ -1,4 +1,4 @@
-import type { MazeSelectType } from "./types";
+import type { AlgorithmSelectType, MazeSelectType } from "./types";
 
 export const MAX_ROWS = 39;
 export const MAX_COLS = 49;
@@ -38,4 +38,11 @@ export const MAZES: MazeSelectType[] = [
   {name: "No maze", value: "NONE"},
   {name: "Binary Tree", value: "BINARY_TREE"},
   {name: "Recursive Division", value: "RECURSIVE_DIVISION"},
+]
+
+export const PATH_FINDING_ALGORITHMS: AlgorithmSelectType[] = [
+  {name: "Breadth First Search", value: "BFS"},
+  {name: "Depth First Search", value: "DFS"},
+  {name: "Dikstra", value: "DIJKSTRA"},
+  {name: "A-Star", value: "A_STAR"},
 ]

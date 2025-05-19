@@ -7,6 +7,11 @@ export type MazeSelectType = {
     value: MazeType,
 }
 
+export type AlgorithmSelectType = {
+    name: string,
+    value: AlgorithmType,
+}
+
 export type TileType = {
     row: number;
     col: number;
