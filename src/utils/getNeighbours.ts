@@ -5,8 +5,8 @@ export const getNeighbours = (grid: GridType, tile: TileType) => {
     const {row, col} = tile;
     const neighbours = [];
 
-    let dx=[1,1,-1,-1];
-    let dy= [1,-1,1,-1];
+    let dx=[0,0,1,-1];
+    let dy= [-1,1,0,0];
     for(let i = 0; i < 4; i++){
         let new_r = row+dx[i];
         let new_c = col+dy[i];

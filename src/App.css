@@ -18,13 +18,69 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes traversed {
+  0% {
+    transform: scale(0.3);
+    background-color: #9333eabf; /* Purple with alpha */
+    border-radius: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    background-color: #4f46e5bf; /* Indigo with alpha */
   }
+  75% {
+    transform: scale(1.2);
+    background-color: #3b82f6bf; /* Blue with alpha */
+  }
+  100% {
+    transform: scale(1);
+    background-color: #22d3ee; /* Cyan */
+  }
+}
+
+/* Keyframes for the 'path' animation */
+@keyframes path {
+  0% {
+    transform: scale(0.3);
+    background-color: #e11d48bf; /* Red with alpha */
+    border-radius: 100%;
+  }
+  50% {
+    background-color: #ea580cbf; /* Orange with alpha */
+  }
+  75% {
+    transform: scale(1.2);
+    background-color: #fb923cbf; /* Amber with alpha */
+  }
+  90% {
+    transform: scale(0.8);
+    background-color: #fde68a; /* Yellow */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Keyframes for the 'wall' animation */
+@keyframes wall {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Animation utility classes */
+.animate-traversed {
+  animation: traversed 1s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.animate-path {
+  animation: path 1.5s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.animate-wall {
+  animation: wall 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media (prefers-reduced-motion: no-preference) {
