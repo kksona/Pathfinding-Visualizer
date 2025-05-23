@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-    <div className="h-screen w-full flex items-center justify-center text-white overflow-x-hidden overflow-y-hidden">
+    <div className="h-screen w-full flex items-center justify-center text-white overflow-x-hidden overflow-y-auto">
       <PathfindingProvider>
         <TileProvider>
           <SpeedProvider>
