@@ -10,18 +10,16 @@ function App() {
   const isVisualizationRunningRef = useRef(false);
 
   return (
-    <div className='h-screen w-fit overflow-x-hidden'>
       <PathfindingProvider>
         <TileProvider>
           <SpeedProvider>
-            <div className='h-fit w-fit flex flex-col overflow-y-hidden'>
+            <div className='h-full w-full flex flex-col'>
               <Nav isVisualizationRunningRef={isVisualizationRunningRef}/>
               <Grid isVisualizationRunningRef={isVisualizationRunningRef}/>
             </div>
           </SpeedProvider>
         </TileProvider>
       </PathfindingProvider>
-    </div>
   )
 }
 
